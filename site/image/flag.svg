@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:odm="http://product.corel.com/CGS/11/cddns/" xml:space="preserve" width="1023px" height="682px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd"
+     viewBox="0 0 10230 6820">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#00B3ED}
+    .fil2 {fill:#000000}
+    .fil1 {fill:#FAF500}
+   ]]>
+  </style>
+ </defs>
+ <path class="fil0" d="M0 0l10230 0 0 6820 -10230 0 0 -6820z"/>
+ <g id="Layer 1">
+  <circle class="fil1" cx="5115" cy="3410" r="2067"/>
+  <path class="fil1" d="M3249 2963l-3609 -744 44 814 3512 167 53 -237z"/>
+  <path class="fil1" d="M3345 2438l-3556 -1717 -44 815 3565 1208 35 -306z"/>
+  <path class="fil1" d="M3704 2096l-2423 -2120 -1326 -69 3679 2426 70 -237z"/>
+  <path class="fil1" d="M4133 1834l-1349 -2041 -771 18 1937 2154 183 -131z"/>
+  <path class="fil1" d="M4563 1606l-624 -1769 -560 9 930 1786 254 -26z"/>
+  <path class="fil1" d="M5035 1615l-150 -1691 -464 -34 413 1812 201 -87z"/>
+  <path class="fil1" d="M7033 2963l3609 -744 -44 814 -3513 167 -52 -237z"/>
+  <path class="fil1" d="M6936 2438l3557 -1717 44 815 -3565 1208 -36 -306z"/>
+  <path class="fil1" d="M6577 2096l2434 -2128 1316 -61 -3679 2426 -71 -237z"/>
+  <path class="fil1" d="M6148 1834l1350 -2041 771 18 -1937 2154 -184 -131z"/>
+  <path class="fil1" d="M5719 1606l623 -1769 561 9 -930 1786 -254 -26z"/>
+  <path class="fil1" d="M5246 1615l151 -1691 464 -34 -413 1812 -202 -87z"/>
+  <rect class="fil2" x="0" y="3410" width="10230" height="3410"/>
+  <ellipse class="fil1" cx="5115" cy="3644" rx="1927" ry="128"/>
+  <ellipse class="fil1" cx="5103" cy="4099" rx="1821" ry="117"/>
+  <ellipse class="fil1" cx="5103" cy="4519" rx="1600" ry="117"/>
+  <ellipse class="fil1" cx="5103" cy="4869" rx="1249" ry="105"/>
+  <ellipse class="fil1" cx="5103" cy="5196" rx="852" ry="58"/>
+ </g>
+</svg>
