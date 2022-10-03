@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    body {
+        font-family: 'Lato';
+    }
+
+    .dropdown-custom-btn button {
+        background-color: black;
+        border-radius: 0px;
+        color: white;
+    }
+
+    .dropdown-custom-btn .btn:first-child:hover {
+        background-color: #682c34;
+        color: white;
+    }
+
+    .my-cart {
+        color: black;
+        font-size: 22px;
+    }
+
+    .btn-custom-gray {
+        background-color: #f9f9f9 !important;
+        color: black;
+        border: 1px #e6e6e6 solid;
+    }
+
+    .btn-custom-gray-2 {
+        color: black;
+        border: 1px #e6e6e6 solid;
+    }
+
+    .input-border-custom-gray {
+        border: 1px #e6e6e6 solid;
+    }
+
+    .custom-nav .nav-link {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .custom-main-nav {
+        border-top: 1px #ececec solid;
+    }
+
+    .section-1 {
+        min-height: 180px;
+        background-color: #F8F3F4;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    .section-1 .title {
+        padding-left: 10px;
+    }
+
+    .section-1 .title h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .section-1 .title h2 {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .section-1 .title h2 span {
+        color: #f16d7f;
+    }
+
+    .category-item {
+        width: 100%;
+        position: relative;
+        padding: 20px 0px;
+
+
+    }
+
+    .category-item img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .category-item .title {
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .category-item .title h5 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .category-item .title h4 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 30px;
+        color: #f16d7f;
+    }
+
+
+    .product-item {
+        height: 360px;
+        width: 100%;
+     border: 1 px red solid;
+    }
+
+    .product-item .image {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+
+
+
+
+
+    .product-item .image img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .product-item .image .shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        display: none;
+    }
+
+    .product-item .image .shadow .btn-outline-white {
+        border: 1px white solid;
+        color: white;
+    }
+
+
+    .product-item .image .shadow .btn-outline-white:hover {
+        background: white;
+        color: black;
+    }
+
+
+    .product-item .image .shadow .btn-outline-white i {
+        margin-right: 10px;
+    }
+
+    .product-item:hover .image .shadow {
+        display: flex;
+    }
+
+    .product-item p.price {
+        color: #f16d7f;
+    }
+
+    .section-3 .btn-custom-info {
+        background-color: #f16d7f;
+        color: white;
+        border-radius: 0px;
+        border: none;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .section-3 .btn-custom-info i {
+        margin-left: 5px;
+    }
+
+    .section-3 .btn-custom-info:hover {
+        background-color: #7a0918;
+        color: white;
+    }
+
+    .section-4 .custom-bg-block {
+        background-color: #222224;
+        min-height: 525px;
+    }
+
+    .section-4 .left-block {
+        background: url('img/section-5-bg.png') center no-repeat;
+        background-size: cover;
+    }
+
+
+    .section-4 .right-block ul {
+        list-style: none;
+    }
+
+    .section-4 .right-block ul li {
+        position: relative;
+        padding: 10px;
+        padding-left: 80px;
+        padding-right: 30px;
+        margin: 25px 0px;
+    }
+
+
+    .section-4 .right-block ul li:first-child {
+        margin-top: 50px;
+    }
+
+    .section-4 .right-block ul li:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        font-size: 20px;
+        color: orange;
+
+        background-size: contain !important;
+        width: 45px;
+        height: 30px;
+        background-repeat: no-repeat !important;
+
+    }
+
+    .section-4 .right-block ul li:nth-of-type(1):after {
+        background: url('img/icons/1.png');
+    }
+
+    .section-4 .right-block ul li:nth-of-type(2):after {
+        background: url('img/icons/2.png');
+    }
+
+    .section-4 .right-block ul li:nth-of-type(3):after {
+        background: url('img/icons/3.png');
+    }
+
+    .section-4 .right-block {
+        color: white;
+    }
+
+    .section .left-block {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .section .left-block h1 {
+        font-size: 54px;
+
+        margin-top: -100px;
+        margin-left: 50px;
+
+    }
+
+    .section .left-block h2 {
+        font-size: 32px;
+        margin-left: 50px;
+    }
+
+    .section .left-block span {
+        color: #f16d7f;
+    }
+
+    .pt-10 {
+        padding-top: 100px;
+    }
+
+    .pb-10 {
+        padding-bottom: 100px;
+    }
+
+    .mt-10 {
+        margin-top: 100px;
+    }
+
+    .mb-10 {
+        margin-bottom: 100px;
+    }
+
+
+    .px-10 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .px-15 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .px-20 {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+
+    .w-30 {
+        width: 30%;
+    }
+
+    .w-40 {
+        width: 40%;
+    }
+
+    .section-5 {
+        background: url('img/bg-6.png') center no-repeat;
+        background-size: cover;
+        min-height: 440px;
+    }
+
+
+
+
+    .section-5 .review-item {
+        padding-top: 100px;
+    }
+
+    .section-5 .carousel-indicators {
+        bottom: -40px;
+        margin-left: -35%;
+    }
+
+    .section-5 .carousel-indicators .active {
+        background-color: #f16d7f;
+    }
+
+    .section-5 .review-item p.text {
+        font-style: italic;
+    }
+
+    .section-5 .review-item p.name {
+        color: #f16d7f;
+        margin: 0;
+    }
+
+    .section-5 .review-item p.location {
+        font-size: 12px;
+    }
+
+
+    .section-5 .custom-email input {
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    .section-5 .custom-email button {
+        border-radius: 0px 25px 25px 0px;
+        background-color: black;
+
+    }
+
+    footer .sub-footer{
+        background-color: #e6e6e6;
+        color:#7a7a7a;
+    }
+
+    footer .social {
+        list-style: none;
+    }
+
+    footer .social li {
+        padding: 5px;
+    }
+    footer .social li a{
+        padding:10px;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color:#b2b2b2;
+    }
+
+    footer .social li:hover a{
+        background-color: #f16d7f;
+        color: white;
+    }
+
+    footer .main-footer p {
+        color:#898989;
+    }
+
+    footer .main-footer h5 {
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    footer .main-footer ul {
+        margin:0;
+        padding: 0;
+    }
+    footer .main-footer li {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0px;
+        text-align: left;
+    }
+    footer .main-footer li a {
+        color:#898989;
+        text-decoration: none;
+    }
+
+
+    .nav_menu a{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .active_link {
+        color:black !important;
+        font-weight: bold;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    
+    
+   
+
+
+  .navbar-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  .navbar-container .navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar-container .navbar-collapse {
+    align-items: flex-start;
+  }
+  .navbar-container .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .navbar-container .navbar-nav {
+    flex-direction: column !important;
+  }
+
+  .btn-group .btn {
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+    max-height: 50px;
+    border-color: gainsboro;
+  }
+
+
+  .container .col-4 a {
+    color: black;
+    text-decoration:none;
+  }
+
+
+  .container-2 img {
+    max-width: 100px;
+
+  }
+
+    
+</style>
+
+
+<body>
+
+<header>
+    <div class="container pt-2">
+        <div class="row p-2">
+            <div class="col-2 logo-container">
+                <img src="../html/img/Logo1.jpg" alt="">
+            </div>
+
+            <div class="col-5 d-flex align-items-center">
+                <div class="input-group">
+                    <button type="button"
+                            class="btn btn-secondary btn-custom-gray dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Browse</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control input-border-custom-gray"
+                           aria-label="Text input with segmented dropdown button">
+                    <button type="button" class="btn btn-outline-secondary btn-custom-gray-2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="col-3 offset-2 d-flex align-items-end flex-column justify-content-center">
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <a href="" class=" my-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown dropdown-custom-btn">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Мой аккаунт
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg custom-main-nav">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  " id="navbarText">
+                <ul class="navbar-nav d-flex align-items-center w-100 justify-content-center custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Man</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Woman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accsoseries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Futured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hot deals</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="section section-1 d-flex align-items-center">
+    <div class="container">
+        <div class="row ">
+            <div class="col-4">
+                <div class="title">
+                    <div><h1>NEW ARRIVALS</h1></div>
+                </div>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-2"><div class="nav_menu"><a href="#">HOME</a>/<a href="#">MEN</a>/<a href="#" class="active_link">NEW ARRIVALS</a></div></div>
+        </div>
+    </div>
+</section>
+
+
+<container class="container-2 ">
+<div class="container">
+    <div class="col_n">
+        <div class="row pt-5 fw-bold align-items-center text-center">
+            <div class="col-5 text-start">PRODUCT DETAILS</div>
+            <div class="col-2">UNITE PRICE</div>
+            <div class="col-1">QUANTITY</div>
+            <div class="col-2">SHIPPING</div>
+            <div class="col-1">SUBTOTAL</div>
+            <div class="col-1">ACTION</div>
+        </div>
+        </div>
+
+<div class="row  mt-3">
+</div>
+
+<div class="row mt-3 py-4 border-top align-items-center text-center">
+    <div class="col-1  p-0"><img src="../html/img/Layer_43.png" alt=""></div>
+    <div class="col-2">
+
+        <div class="FW-600 text-start pb-4">MANGO PEOPLE T-SHIRT</div>
+        <div class="text-start">Color: <text class="text-muted">Red</text></div>
+        <div class="text-start">Size: <text class="text-muted">Xll</text></div>
+        
+
+
+    </div>
+    <div class="col-2"></div>
+    <div class="col-2">$150</div>
+    <div class="col-1"><text class="border px-4 py-1">2</text></div>
+    <div class="col-2">FREE</div>
+    <div class="col-1">$300</div>
+    <div class="col-1"><img src="../html/img/xcross.png" style="max-width: 20px ;" alt=""></div>
+</div>
+
+<div class="row mt-3 py-4 border-top align-items-center text-center">
+    <div class="col-1  p-0"><img src="../html/img/Layer_43.png" alt=""></div>
+    <div class="col-2">
+
+        <div class="FW-600 text-start pb-4">MANGO PEOPLE T-SHIRT</div>
+        <div class="text-start">Color: <text class="text-muted">Red</text></div>
+        <div class="text-start">Size: <text class="text-muted">Xll</text></div>
+        
+
+
+    </div>
+    <div class="col-2"></div>
+    <div class="col-2">$150</div>
+    <div class="col-1"><text class="border px-4 py-1">2</text></div>
+    <div class="col-2">FREE</div>
+    <div class="col-1">$300</div>
+    <div class="col-1"><img src="../html/img/xcross.png" style="max-width: 20px ;" alt=""></div>
+</div>
+
+<div class="row mt-3 py-4 border-top border-bottom align-items-center text-center">
+    <div class="col-1  p-0"><img src="../html/img/Layer_43.png" alt=""></div>
+    <div class="col-2">
+
+        <div class="FW-600 text-start pb-4">MANGO PEOPLE T-SHIRT</div>
+        <div class="text-start">Color: <text class="text-muted">Red</text></div>
+        <div class="text-start">Size: <text class="text-muted">Xll</text></div>
+        
+
+
+    </div>
+    <div class="col-2"></div>
+    <div class="col-2">$150</div>
+    <div class="col-1"><text class="border px-4 py-1">2</text></div>
+    <div class="col-2">FREE</div>
+    <div class="col-1">$300</div>
+    <div class="col-1"><img src="../html/img/xcross.png" style="max-width: 20px ;" alt=""></div>
+</div>
+
+
+<div class="row pt-5">
+    <div class="col-6 p-0"><button type="button" class="btn btn-outline-secondary  rounded-0 px-5 py-2"><text class="fw-bold text-dark">CLEAR SHOPPING CART</text></button></div>
+    <div class="col-6 p-0"><button type="button" class="btn btn-outline-secondary  rounded-0 px-5 py-2 float-end"><text class="fw-bold text-dark">CONTINUE SHOPPING</text></button></div>
+</div>
+
+
+
+
+<div class="row text-start pt-5">
+
+    <div class="col-4">
+        <h5>SHIPPING ADRESS</h5>
+    </div>
+    <div class="col-4">
+        <h5>COUPON DISCOUNT</h5>
+    </div>
+    <div class="col-4">
+        
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-4 px-3">
+<div class="row pt-3"><select class="form-control rounded-0 py-2">
+    <option>Default select</option>
+  </select></div>
+<div class="row"><input class="form-control rounded-0 py-2 mt-4" type="text" placeholder="State" readonly></div>
+<div class="row"><input class="form-control rounded-0 py-2 mt-4" type="text" placeholder="Postcode/Zip" readonly></div>
+<div class="row"><button type="button" class="btn btn-outline-secondary rounded-0 w-30 my-4 py-2">GET A QUOTE</button></div>
+    </div>
+    
+    
+        <div class="col-4 px-4">
+    <div class="row pt-3">Enter your coupon code if you have one</div>
+    <div class="row"><input class="form-control rounded-0 py-2 mt-4" type="text" placeholder="State" readonly></div>
+    <div class="row"><button type="button" class="btn btn-outline-secondary rounded-0 w-40 my-4 py-2">APPLY COUPON</button></div>
+</div>
+
+
+<div class="col-4">
+    <div class="container bg-light">
+        <div class="col">
+
+
+        <div class="row text-end pt-5"><text class="">SUB TOTAL   $900</text></div>
+
+
+        <div class="row text-end pt-3"><h5 class="fw-bold">GRAND TOTAL    $900</h5></div>
+            
+        
+        <div class="row px-5 pb-4"><button type="button" class="btn btn-outline-secondary rounded-0  my-4 py-2">PROCEED TO CHECKOUT</button></div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row pt-5"></div>
+
+</div>
+
+</div>
+</div>
+
+</container>
+
+
+
+<section class="section section-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="review-item">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="img/head-1.png" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text">
+                                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+                                            pretium”
+                                        </p>
+
+                                        <p class="name">Bin Burhan </p>
+                                        <p class="location">Dhaka, Bd</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review-item">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="img/head-1.png" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text">
+                                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+                                            pretium”
+                                        </p>
+
+                                        <p class="name">Bin Burhan </p>
+                                        <p class="location">Dhaka, Bd</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review-item">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="img/head-1.png" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text">
+                                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+                                            pretium”
+                                        </p>
+
+                                        <p class="name">Bin Burhan </p>
+                                        <p class="location">Dhaka, Bd</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-center flex-wrap flex-column">
+                <h3 class="text-center fw-bold text-uppercase">Header 1</h3>
+                <h6 class="text-center text-uppercase">Header 2</h6>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <div class="input-group mb-3 custom-email">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                   aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="pt-10">
+    <div class="container main-footer">
+        <div class="row">
+            <div class="col-5">
+                <div class="logo">
+                    <img src="../html/img/Logo1.jpg" alt="">
+                </div>
+                <p class="pt-5">Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded
+                    array of processes and cross-unit partnerships.
+                </p>
+                <p class="pt-3 pb-5">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="col-2 offset-1">
+                <h5 class="mb-5">Company</h5>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>  <li>
+                    <a href="">Home</a>
+                </li>
+
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5 class="mb-5">Company</h5>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>  <li>
+                    <a href="">Home</a>
+                </li>
+
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5 class="mb-5">Company</h5>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>  <li>
+                    <a href="">Home</a>
+                </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-footer pb-2 pt-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <p>© 2017  Brand  All Rights Reserved.</p>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <ul class="social d-flex justify-content-around">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
