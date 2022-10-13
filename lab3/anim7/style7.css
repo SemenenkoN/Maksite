@@ -1,0 +1,454 @@
+body html {
+  height: 100vh;
+  width: 100vh;
+
+}
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  min-height: 100vh;
+  border: 1px solid;
+  padding:  0;
+  margin: 0;
+  
+}
+
+
+.head {
+  border: 1px dashed;
+  min-width: 500px;
+  min-height: 500px;
+  background-size: 500px;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+.headb {
+  position: relative;
+  height: 44px;
+  width: 87px;
+  background: black;
+  top: 162px;
+  left: 263px;
+  z-index: 1;
+  
+  animation: up1 1s infinite steps(2, jump-none);
+
+}
+
+@keyframes up1 {
+  from {
+    top: 154px;
+  }
+
+}
+
+.hleft {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  top: 178px;
+  left: 263px;
+  z-index: 2;
+  
+  animation: up3 1s infinite steps(2, jump-none);
+}
+
+@keyframes up3 {
+  from {
+    top: 169px;
+  }
+}
+
+.hright {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background:#ffffff;
+  top: 170px;
+  left: 342px;
+  z-index: 2;
+  
+  animation: up2 1s infinite steps(2, jump-none);
+}
+
+@keyframes up2 {
+  from {
+    top:161px
+  }
+  
+}
+
+.eye {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  top: 127px;
+  left: 281px;
+  z-index: 2;
+  
+  animation: up4eye 1s infinite steps(2, jump-none);
+}
+
+@keyframes up4eye {
+  from {
+    top: 117px;
+  }
+}
+
+.b-1 {
+  position: relative;
+  height: 9px;
+  width: 44px;
+  background: black;
+  top: 154px;
+  left: 263px;
+  z-index: 2;
+  
+  animation: up 1s infinite steps(2, jump-none);
+}
+
+
+@keyframes up {
+  from{
+    transform: scaleY(2);
+    top: 149.5px;
+  }
+}
+
+
+
+.b-2 {
+  position: relative;
+  height: 8px;
+  width: 107px;
+  background: black;
+  top: 154px;
+  left: 226px;
+  z-index: 2;
+  
+}
+
+
+.b-2-2 {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  top: 146px;
+  left: 245px;
+  z-index: 2;
+  
+  animation: blink 1s steps(2, jump-none) normal infinite;
+ 
+
+}
+
+@keyframes blink {
+  1% {
+    background: #ffffff;
+  }
+  100% {
+    background: #000000;
+  }
+}
+
+
+
+.b-2-3 {
+  position: relative;
+  height: 8px;
+  width: 10px;
+  background: #000000;
+  top: -392px;
+  left: 253px;
+  z-index: 2;
+  
+  animation: blinkreverse 1s steps(2, jump-none) normal infinite;
+}
+
+@keyframes blinkreverse {
+
+  1% {
+    background: #000000;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+
+.body {
+  position: relative;
+  height: 55px;
+  width: 61px;
+  background: black;
+  top: 146px;
+  left: 237px;
+  z-index: 2;
+  
+}
+
+.rarm {
+  position: relative;
+  height: 8px;
+  width: 18px;
+  background: black;
+  top: 120px;
+  left: 298px;
+  z-index: 2;
+  
+  animation: arm1 1s steps(2, jump-none) normal infinite;
+}
+
+@keyframes arm1 {
+  from {
+    top: 110px;
+  }
+  
+}
+
+
+.rarm-2 {
+  position: relative;
+  height: 8px;
+  width: 9px;
+  background: black;
+  top: 120px;
+  left: 307px;
+  z-index: 2;
+  
+  animation: arm1 1s steps(2, jump-none) normal infinite;
+}
+
+.h1 {
+  position: relative;
+  height: 43px;
+  width: 10px;
+  background: black;
+  top: 78px;
+  left: 174px;
+  z-index: 2;
+  
+}
+
+.h2 {
+  position: relative;
+  height: 36px;
+  width: 9px;
+  background: black;
+  top: 52px;
+  left: 184px;
+  z-index: 2;
+  
+}
+
+.h3 {
+  position: relative;
+  height: 36px;
+  width: 9px;
+  background: black;
+  top: 25px;
+  left: 193px;
+  z-index: 2;
+  
+}
+
+.h4 {
+  position: relative;
+  height: 35px;
+  width: 9px;
+  background: black;
+  top: -2px;
+  left: 202px;
+  z-index: 2;
+  
+}
+
+.h5 {
+  position: relative;
+  height: 43px;
+  width: 8px;
+  background: black;
+  top: -37px;
+  left: 211px;
+  z-index: 2;
+  
+}
+
+.b1 {
+  position: relative;
+  height: 87px;
+  width: 9px;
+  background: black;
+  top: -88px;
+  left: 219px;
+  z-index: 2;
+  
+  animation: leg1 1s steps(2, jump-none) normal infinite;
+}
+
+
+@keyframes leg1 {
+  from {
+
+  }
+  
+}
+
+.cover1 {
+  position: relative;
+  height: 8px;
+  width: 15px;
+  background: #ffffff;
+  top: -296px;
+  left: 237px;
+  z-index: 2;
+  
+  animation: blink 1s steps(2, jump-none) normal infinite;
+
+}
+
+
+.cover2 {
+  position: relative;
+  height: 33px;
+  width: 18px;
+  background: #ffffff;
+  top: -308px;
+  left: 219px;
+  z-index: 2;
+  
+  animation: blinkreverse 1s steps(2, jump-none) normal infinite;
+}
+
+.b2 {
+  position: relative;
+  height: 96px;
+  width: 9px;
+  background: black;
+  top: -184px;
+  left: 228px;
+  z-index: 2;
+  
+}
+
+.b2w {
+
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  top: -201px;
+  left: 229px;
+  z-index: 4;
+  
+}
+
+.rlegb {
+  position: relative;
+  height: 25px;
+  width: 61px;
+  background: black;
+  top: -254px;
+  left: 237px;
+  z-index: 2;
+  
+}
+
+.llegb1 {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background: black;
+  top: -254px;
+  left: 237px;
+  z-index: 2;
+  
+}
+
+.rlegb1 {
+
+  position: relative;
+    height: 10px;
+    width: 18px;
+    background: black;
+    top: -243px;
+    left: 262px;
+    z-index: 2;
+    animation: top2 1s steps(2, jump-none) normal infinite;
+
+}
+
+@keyframes ups{
+  from {
+    top: -243px;
+  }
+  
+}
+
+.w1 {
+  position: relative;
+  height: 8px;
+  width: 27px;
+  background: #ffffff;
+  top: -280px;
+  left: 271px;
+  z-index: 2;
+  
+}
+
+.w2 {
+  position: relative;
+  height: 8px;
+  width: 18px;
+  background: #ffffff;
+  top: -296px;
+  left: 280px;
+  z-index: 2;
+  
+}
+
+.w3 {
+  position: relative;
+  height: 8px;
+  width: 10px;
+  background: #ffffff;
+  top: -312px;
+  left: 288px;
+  z-index: 2;
+  
+}
+
+.rlegb2 {
+  position: relative;
+  height: 28px;
+  width: 9px;
+  background: #000000;
+  top: -345px;
+  left: 262px;
+  z-index: 2;
+  animation: top1 1s steps(2, jump-none) normal infinite;
+}
+
+
+
+@keyframes top1 {
+from {
+  top: -364px;
+}
+
+}
+
+@keyframes top2 {
+ from { top: -262px;}
+}
