@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+ html body {
+    min-height: 100vh;
+ }
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    position: relative;
+    right: 200px;
+}
+
+.text-left {
+    position: relative;
+    min-height: 200px;
+    min-width: 400px;
+    background: white;
+    z-index: 10;
+    animation-name: left;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+
+.text { 
+    position: relative;
+    z-index: 5;
+}
+
+@keyframes left {
+    from {left: 400px;}
+    to {left: 800px;}
+}
+    </style>
+
+    <div class="container">
+        
+        
+        <div class="text-left"></div>
+        <div class="text"><img src="fon.png" alt=""></div>
+    </div>
+</body>
+</html>
