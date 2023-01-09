@@ -1,0 +1,368 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-module {
+    background-color: white;
+    width: 500px;
+    min-height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px black;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-module .search-header {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.search-module .search-header input[type='search'] {
+    padding: 10px;
+    border: 1px #9d9d9d solid;
+    color: lightblue;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.search-module .search-header button {
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    background-color: brown;
+    min-width: 40px;
+    height: 40px;
+}
+
+.search-module .search-body {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.search-module .search-body > p {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: brown;
+    color:white;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.search-module .search-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+
+.search-module .search-body ul li{
+    width: 100%;
+    padding: 5px;
+    color:white;
+    font-weight: bold;
+}
+
+.tabs {
+    width: 700px;
+    min-height: 700px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.tabs .tab-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px lightgray solid;
+}
+
+.tabs .tab-header .tab {
+    padding: 10px;
+    background-color: brown;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.tabs .tab-header .tab:hover,
+.tabs .tab-header .tab.active {
+    background-color: #5d1818;
+}
+
+.tabs .tab-body {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.tabs .tab-body .tab-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.tabs .tab-body .tab-item.active {
+    display: block;
+}
+
+.new-module {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-module h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:lighter ;
+    color:brown;
+}
+
+.new-module .news {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.new-module .news .news-item {
+    background-color: lightgray;
+    box-shadow: 0px 0px 2px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.new-module .news .news-item > *{
+    width: 100%;
+}
+
+.new-module .news .news-item .news-header h3 {
+    background-color: #5d1818;
+    margin: 0;
+    padding: 10px;
+    width: max-content;
+    color: white;
+}
+
+.new-module .news .news-item .news-body {
+padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.new-module .news .news-item .news-footer {
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.schedule-module {
+    width: 500px;
+    height: 500px;
+
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.schedule-module .schedule {
+    width: 100%;
+    height: 100%;
+}
+
+
+.schedule-module .schedule-header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px lightgray solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.schedule-module .schedule .schedule-header .schedule-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.schedule-module .schedule .schedule-header .schedule-section > *{
+    width: 33%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+
+    font-family: 'Arial Black';
+    font-size:14px;
+}
+.schedule-module .schedule .schedule-header .schedule-section > a {
+    text-decoration: none;
+    color:black;
+
+}
+.schedule-module .schedule .schedule-header .schedule-section > a > i{
+    margin-right: 10px;
+    color:red;
+
+}
+
+.schedule-module .schedule .schedule-header .schedule-section:nth-of-type(2) input[type='search'] {
+    width: 80%;
+
+}
+
+.schedule-module .schedule .schedule-header .schedule-section:nth-of-type(2) button {
+    width: 20%;
+    background-color: brown;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    padding: 7px;
+}
+
+    /*.schedule-module .schedule .schedule-header .schedule-section > a{
+        background-color: brown;
+    }
+
+    .schedule-module .schedule .schedule-header .schedule-section > p#date{
+        background-color: #ff5454;
+    }
+
+    .schedule-module .schedule .schedule-header .schedule-section > p#week{
+        background-color: rgba(255, 255, 255, 0.68);
+    }*/
+
+
+
+.schedule-module .schedule-body {
+    width: 100%;
+    height: 330px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-module .schedule .schedule-body .schedule-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+}
+
+.schedule-module .schedule .schedule-body .schedule-list li.schedule-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px lightgray solid;
+    padding: 10px 30px 10px 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+}
+
+
+.schedule-module .schedule .schedule-body .schedule-list li.schedule-item:after {
+    content: attr(data-auditory);
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    right: -41px;
+    top: 39px;
+    width: 106px;
+    height: 26px;
+    text-align: center;
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

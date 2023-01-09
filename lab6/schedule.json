@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "group": "ИВТ-1",
+      "course": "1 Курс",
+      "day_of_week": "Понедельник",
+      "subjects": [
+        {
+          "lesson": "1",
+          "lesson_time": "08:00-09:30",
+          "title": "Мат. анализ",
+          "teacher": "проф. Аверин Г.В.",
+          "auditory": "ауд. 108"
+        },
+        {
+          "lesson": "2",
+          "lesson_time": "08:50-11:20",
+          "title": "Мат. анализ",
+          "teacher": "проф. Аверин Г.В.",
+          "auditory": "ауд. 108"
+        }
+      ]
+    },
+    {
+      "group": "ИВТ-2",
+      "course": "1 Курс",
+      "day_of_week": "Вторник",
+      "subjects": [
+        {
+          "lesson": "1",
+          "lesson_time": "08:00-09:30",
+          "title": "Мат. анализ",
+          "teacher": "проф. Аверин Г.В.",
+          "auditory": "ауд. 108"
+        },
+        {
+          "lesson": "2",
+          "lesson_time": "08:50-11:20",
+          "title": "Мат. анализ",
+          "teacher": "проф. Аверин Г.В.",
+          "auditory": "ауд. 108"
+        }
+      ]
+    }
+  ]
+}

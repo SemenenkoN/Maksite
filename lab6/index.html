@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="tabs">
+        <div class="tab-header">
+            <div class="tab active"></div>
+            <div class="tab"></div>
+        </div>
+        <div class="tab-body">
+            <div class="tab-item">
+                <div class="search-module">
+                    <div class="search-header">
+                        <input type="search" placeholder="Введите имя" value="">
+                        <button id="search">Найти</button>
+                    </div>
+                    <div class="search-body">
+                        <p>Таблица результата</p>
+                        <ul>
+
+                        </ul>
+                        <div id="for-ajax"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-item active">
+                <div class="new-module">
+                    <h1>NEWS</h1>
+                    <div class="news">
+                        <div class="news-item">
+                            <div class="news-header">
+                                <h3>News title</h3>
+                            </div>
+
+                            <div class="news-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum delectus dolor ea error
+                                    esse et ex expedita hic impedit, in magnam necessitatibus nulla perferendis quia
+                                    quisquam recusandae repellat, ut voluptatum.</p>
+                            </div>
+                            <div class="news-footer">
+                                <a href="">More info</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="news-header">
+                                <h3>News title</h3>
+                            </div>
+
+                            <div class="news-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum delectus dolor ea error
+                                    esse et ex expedita hic impedit, in magnam necessitatibus nulla perferendis quia
+                                    quisquam recusandae repellat, ut voluptatum.</p>
+                            </div>
+                            <div class="news-footer">
+                                <a href="">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-item">
+                <div class="schedule-module">
+                    <div class="schedule">
+                        <div class="schedule-header">
+                            <div class="schedule-section top">
+                                <a href=""><i class="fa-regular fa-floppy-disk"></i>Расписание</a>
+                                <p id="date">17.11.2022</p>
+                                <p id="week">Верхняя</p>
+                            </div>
+                            <div class="schedule-section  middle">
+                                <input type="search">
+                                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <div class="schedule-section  bottom">
+                                <select name="course" id="course"></select>
+                                <select name="group" id="group"></select>
+                                <select name="day" id="day"></select>
+                            </div>
+                        </div>
+                        <div class="schedule-body">
+                            <ul class="schedule-list">
+                                <li class="schedule-item" data-auditory="ауд. 108">
+                                    <div class="part">
+                                        <p>Четверг</p>
+                                        <p>17.11.2022</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>1 пара</p>
+                                        <p>(8:00-9:30)</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>Мат. анализ</p>
+                                        <p><small><em>Аверина Г.В.</em></small></p>
+                                    </div>
+                                </li>
+                                <li class="schedule-item" data-auditory="ауд. 108">
+                                    <div class="part">
+                                        <p>Четверг</p>
+                                        <p>17.11.2022</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>1 пара</p>
+                                        <p>(8:00-9:30)</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>Мат. анализ</p>
+                                        <p><small><em>Аверина Г.В.</em></small></p>
+                                    </div>
+                                </li>
+                                <li class="schedule-item" data-auditory="ауд. 108">
+                                    <div class="part">
+                                        <p>Четверг</p>
+                                        <p>17.11.2022</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>1 пара</p>
+                                        <p>(8:00-9:30)</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>Мат. анализ</p>
+                                        <p><small><em>Аверина Г.В.</em></small></p>
+                                    </div>
+                                </li>
+                                <li class="schedule-item" data-auditory="ауд. 108">
+                                    <div class="part">
+                                        <p>Четверг</p>
+                                        <p>17.11.2022</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>1 пара</p>
+                                        <p>(8:00-9:30)</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>Мат. анализ</p>
+                                        <p><small><em>Аверина Г.В.</em></small></p>
+                                    </div>
+                                </li>
+                                <li class="schedule-item" data-auditory="ауд. 108">
+                                    <div class="part">
+                                        <p>Четверг</p>
+                                        <p>17.11.2022</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>1 пара</p>
+                                        <p>(8:00-9:30)</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>Мат. анализ</p>
+                                        <p><small><em>Аверина Г.В.</em></small></p>
+                                    </div>
+                                </li>
+                                <li class="schedule-item" data-auditory="ауд. 108">
+                                    <div class="part">
+                                        <p>Четверг</p>
+                                        <p>17.11.2022</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>1 пара</p>
+                                        <p>(8:00-9:30)</p>
+                                    </div>
+                                    <div class="part">
+                                        <p>Мат. анализ</p>
+                                        <p><small><em>Аверина Г.В.</em></small></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="tabs.js"></script>
+<script src="news.js"></script>
+<script src="schedule.js"></script>
+<script>
+    let search = document.querySelector("#search")
+    search.onclick = function () {
+        let searchText = document.querySelector("input[type='search']").value
+        let resultBlock = document.querySelector(".search-body ul")
+
+        let formData = new FormData();
+        formData.append("type", "nickname")
+
+        let handleData = function (jsonArray) {
+            let tmp = '';
+
+            jsonArray.forEach(item => {
+                if (item.indexOf(searchText) !== -1)
+                    tmp += `<li onclick="this.style.display = 'none' ">${item}</li>`
+            })
+
+            resultBlock.innerHTML = tmp;
+        }
+
+        fetch('/ajax.php', {
+            method: 'POST',
+            body: formData
+        })
+            .then((response) => {
+                return response.json()
+            })
+            .then((jsonArray) => {
+                if (!localStorage.getItem("nicknames_data")) {
+                    localStorage.setItem("nicknames_data", JSON.stringify(jsonArray))
+                }
+
+                handleData(jsonArray)
+            })
+            .catch((err) => {
+                console.log("fetch error")
+                if (localStorage.getItem("nicknames_data")) {
+                    let jsonArray = JSON.parse(localStorage.getItem("nicknames_data"));
+                    handleData(jsonArray)
+                }
+            })
+
+    }
+</script>
+</body>
+</html>
